@@ -4,6 +4,14 @@ class Counter extends Component {
   state = {
     count: 0,
   };
+    
+    styles = {
+        fontSize: 10,
+        fontweight: 'bold',
+    };
+
+
+
   render() {
     return (
       <React.Fragment>
