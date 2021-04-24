@@ -10,6 +10,9 @@ class Counter extends Component {
     fontSize: 20,
     fontweight: "bold",
   };
+    handleIncrement() {
+    console.log('Increment clicked');
+}
 
   render() {
     return (
@@ -19,11 +22,11 @@ class Counter extends Component {
       </div>
     );
   }
-  //   getBadgeClasses() {
-  //     let classes = "badge m-2 badge-";
-  //     classes += this.state.count === 0 ? "warning" : "primary";
-  //     return classes;
-  //   }
+    getBadgeClasses() {
+      let classes = "badge m-2 badge-";
+      classes += this.state.count === 0 ? "warning" : "primary";
+      return classes;
+    }
 
   //   formatCount() {
   //     const { count } = this.state;
